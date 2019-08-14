@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            div.content {
+                display: flex;
+                align-items: center;
+                text-align: center;
+            }
+        </style>
+        <title>Рабочая ссылка для календаря</title>
+    </head>
+    <body>
+        <div class="content">
+            <!-- Target -->
+            <input id="copy" value="{{ link }}" />
+
+            <!-- Trigger -->
+            <button class="btn" data-clipboard-target="#copy">
+                <img
+                    src="assets/clippy.svg"
+                    alt="Give me a working link, Istomin!"
+                />
+            </button>
+            <p>Скорее копируй, пока не прикрыли</p>
+            <div id="footer">
+                &copy; Copyright 2019 by
+                <a target="_blank" href="https://istomin.im/">Istomin</a>.
+            </div>
+            <script src="https://unpkg.com/clipboard@2/dist/clipboard.min.js"></script>
+        </div>
+    </body>
+</html>
